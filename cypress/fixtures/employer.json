@@ -1,0 +1,14 @@
+{
+    "main_url": "https://dev.profteam.su/login",
+    "login": "testerEmployer",
+    "password": "Password1",
+    "name": "Раб",
+    "salary_from": "20000",
+    "salary_up_to": "100000",
+    "requirements": "быть норм чуваком",
+    "duties": "жить и кайфовать",
+
+    "wrong_name": "qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq",
+    "wrong_salary_from": "100000",
+    "wrong_salary_up_to": "2000"
+}

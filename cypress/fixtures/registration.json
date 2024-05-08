@@ -1,0 +1,19 @@
+{
+    "main_url": "https://dev.profteam.su/registration",
+    "login": "Vlukasha",
+    "email": "vikalukashhenko13@mail.ru",
+    "password": "Vikaluk03",
+    "surname": "Лукашенко",
+    "name": "Виктория",
+    "patronymic": "Станиславовна",
+
+    "existent_login": "Vlukashhh",
+    "existent_email": "vikalukashhenko3@mail.ru",
+    "none_existent_login": "влукаш",
+    "none_existent_email": "vivi@mailru",
+    "none_existent_password": "vikaluk",
+    "none_match_password": "vikaluk1",
+    "none_existent_surname": "Лукашенко3",
+    "none_existent_name": "Viktoria",
+    "none_existent_patronymic": "Станиславовна3"
+}
