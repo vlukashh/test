@@ -1,5 +1,5 @@
 describe('Create vacancy test', () => {
-    it('Create vacancy negative test', () => {
+    it('Создание вакансии с некорректным диапозоном', () => {
         cy.fixture('employer').then(data => {
             cy.visit(data.main_url)
 
@@ -45,7 +45,7 @@ describe('Create vacancy test', () => {
             cy.log('Ввод обязанностей');
             cy.get('.vacancy-add-form-wrapper > .form > :nth-child(1) > .form__labels > .labels > :nth-child(6) > .form-control > .form-area').type(data.duties);
 
-            cy.log('Проверка несоздавшейся вакансии c некорректной обязанностью');
+            cy.log('Проверка несоздавшейся вакансии c некорректным диапозоном');
             cy.get('.form-error > span').should('exist');
         })
     })

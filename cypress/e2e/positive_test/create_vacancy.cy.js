@@ -1,5 +1,5 @@
 describe('Create vacancy test', () => {
-    it('Create vacancy positive test', () => {
+    it('Создание вакансии positive test', () => {
         cy.fixture('employer').then(data => {
             cy.visit(data.main_url)
 
@@ -37,7 +37,7 @@ describe('Create vacancy test', () => {
             cy.get('.form-select__items > :nth-child(2)').click();
 
             cy.log('Клик на график работы "2/2"');
-            cy.get('.vacancy-add-form-wrapper > .form > :nth-child(1) > .form__labels > .labels > :nth-child(4) > [data-v-af677f15=""] > :nth-child(1) > .radio-list > :nth-child(2) > .radio-component__input ').click();
+            cy.get('.vacancy-add-form-wrapper > .form > :nth-child(1) > .form__labels > .labels > :nth-child(4) > :nth-child(1) > .radio-list > :nth-child(2) > .radio-component__input ').click();
 
             cy.log('Ввод требований');
             cy.get('.vacancy-add-form-wrapper > .form > :nth-child(1) > .form__labels > .labels > :nth-child(5) > .form-control > .form-area').type(data.requirements);

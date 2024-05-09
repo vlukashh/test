@@ -1,5 +1,5 @@
 describe('Create potrebnosty test', () => {
-    it('Create potrebnosty negative test', () => {
+    it('Создание потребности с некорректным названием ', () => {
         cy.fixture('employer').then(data => {
             cy.visit(data.main_url)
 

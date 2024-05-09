@@ -1,5 +1,5 @@
 describe('Registration Test', () => {
-    it('Тест с неверныйм повторяющим password', () => {
+    it('Регистрация с неверным повторяющим паролем ', () => {
         cy.fixture('registration').then(data => {
             cy.log('Переход на страницу регистрации')
             cy.visit(data.main_url)
@@ -20,8 +20,7 @@ describe('Registration Test', () => {
             cy.get(':nth-child(4) > .button').click()
             
             cy.log('Проверка, что появился элемент сигнализирующий об ошибке')
-            cy.get(':nth-child(1) > :nth-child(1) > .form-error')
-            .should('exist')
+            cy.get(':nth-child(1) > :nth-child(1) > .form-error').should('exist')
         });
     });
 });

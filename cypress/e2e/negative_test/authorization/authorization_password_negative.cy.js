@@ -1,5 +1,5 @@
 describe('Authorization test', () => {
-    it('Authorization negative test', () => {
+    it('Авторизация с некорректным паролем negative test', () => {
         cy.fixture('student').then(data => {
 
             cy.log('Переход на страницу авторизации')

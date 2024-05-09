@@ -1,5 +1,5 @@
 describe('Registration Test', () => {
-    it('Тест с существующим login', () => {
+    it('Регистрация с существующим login', () => {
         cy.fixture('registration').then(data => {
             cy.log('Переход на страницу регистрации')
             cy.visit(data.main_url)

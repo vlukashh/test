@@ -1,5 +1,5 @@
 describe('Search test', () => {
-    it('Просмотр вакансии с помощью посика negative', () => {
+    it('Просмотр вакансии с некорректным посиком', () => {
         cy.fixture('student').then(data => {
             cy.visit(data.main_url)
 
@@ -12,12 +12,12 @@ describe('Search test', () => {
             cy.log('Клик по кнопке "Войти"');
             cy.get(':nth-child(3) > .button').click();
 
-            cy.wait(2000)
+            cy.wait(1000)
 
             cy.log('Клик по кнопке для перехода на вакансии')
             cy.get(':nth-child(1) > .header__nav > [href="/vacancies"]').click()
 
-            cy.wait(2000)
+            cy.wait(1000)
 
             cy.log('Ввод названия вакансии');
             cy.get('.form-input--text').type(data.wrong_name)

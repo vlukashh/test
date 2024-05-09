@@ -1,5 +1,5 @@
 describe('Registration Test', () => {
-    it('Тест с некорректным  login', () => {
+    it('Регистрация с некорректным  login', () => {
         cy.fixture('registration').then(data => {
             cy.log('Переход на страницу регистрации')
             cy.visit(data.main_url)
@@ -19,8 +19,7 @@ describe('Registration Test', () => {
             
             
             cy.log('Проверка, что появился элемент сигнализирующий об ошибке')
-            cy.get(':nth-child(1) > :nth-child(1) > .form-error')
-            .should('exist')
+            cy.get(':nth-child(1) > :nth-child(1) > .form-error').should('exist')
         });
     });
 });

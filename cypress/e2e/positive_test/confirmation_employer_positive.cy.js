@@ -1,5 +1,5 @@
 describe('Confirmation test', () => {
-    it('подтверждение отклика от работодателя positive', () => {
+    it('Подтверждение отклика от работодателя positive', () => {
         cy.fixture('employer').then(data => {
             cy.visit(data.main_url)
 

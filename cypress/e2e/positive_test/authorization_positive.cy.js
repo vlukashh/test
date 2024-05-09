@@ -1,6 +1,6 @@
 
 describe('Authorization test', () => {
-    it('Authorization positive test', () => {
+    it('Авторизация positive test', () => {
         cy.fixture('student').then(data => {
             cy.visit(data.main_url)
             cy.log('Ввод корректного логина')

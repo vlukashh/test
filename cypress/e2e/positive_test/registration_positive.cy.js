@@ -1,6 +1,5 @@
-
 describe('Registration test', () => {
-    it('Registration positive test', () => {
+    it('Регистрация positive test', () => {
         cy.fixture('registration').then(data => {
             cy.visit(data.main_url)
             cy.log('Ввод корректного логина')
@@ -17,7 +16,7 @@ describe('Registration test', () => {
             cy.get(':nth-child(4) > .button').click()
 
             cy.log('Ввод корректной фамилия')
-            cy.get('[style=""] > :nth-child(1) > .form-control--medium > .form-input--text').type(data.name)
+            cy.get(':nth-child(1) > .form-control--medium > .form-input--text').type(data.name)
 
             cy.log('Ввод корректного имя')
             cy.get(':nth-child(2) > .form-control--medium > .form-input--text').type(data.surname)
